@@ -1,0 +1,244 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <title>Store1</title>
+<style>
+.card{
+box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+img{
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.introduction{
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: lightblue;
+}
+
+
+
+
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg bg-dark"data-bs-theme="dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Shopping</a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'login' %}">Login</a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link" href="{% url 'sign_up' %}">Register</a>
+        </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#">Category</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search items" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="introduction text-center p-5 m-3">
+ <h1 class=""> The OB Electronics</h1>
+<h2> "we specialize in Electronics" </h2>
+</div>
+
+
+
+
+
+
+<div class="container">
+<div class="row">
+<div class="card productcard m-3 text-center" style="width: 22rem;">
+  <img src="{% static 'images/img1.jpg'%}" class="card-img-top p-2" alt="..." style="height: 360px; ">
+  <div class="card-body">
+    <h5 class="card-title">APPLE IPHONE 13 PRO</h5>
+    <p class="card-text">iphone 13,boasts an advanced dual_camera system that allows ...</p>
+    <h3 class="text-danger "> Rs 12599.O </h3>
+   <br>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-success">Add to Cart </a>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-primary">By Now  </a>
+
+  </div>
+</div>
+<div class="card productcard m-3 text-center" style="width: 22rem;">
+  <img src="{% static 'images/img4.jpg'%}" class="card-img-top p-2" alt="..." style="height: 360px; ">
+  <div class="card-body">
+    <h5 class="card-title">APPLE MacBook Air M1 2020 </h5>
+    <p class="card-text">apple macook air m1 2020 13 /16GO /256GB SSD...</p>
+    <h3 class="text-danger"> Rs 12599.O </h3>
+   <br>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-success">Add to Cart </a>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-primary">By Now  </a>
+
+  </div>
+</div>
+<div class="card productcard m-3 text-center" style="width: 22rem;">
+  <img src="{% static 'images/img6.jpg'%}" class="card-img-top p-2" alt="..." style="height: 360px; ">
+  <div class="card-body">
+    <h5 class="card-title">PrO Apple iPhone XS </h5>
+    <p class="card-text">iphone xs,boasts an advanced dual_camera system that allows ...</p>
+<h3 class="text-danger "> Rs 12599.O </h3>
+   <br>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-success">Add to Cart </a>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-primary">By Now  </a>
+
+  </div>
+
+</div>
+<div class="card productcard m-3 text-center" style="width: 22rem;">
+  <img src="{% static 'images/img77.jpg'%}" class="card-img-top p-2" alt="..." style="height: 360px; ">
+  <div class="card-body">
+    <h5 class="card-title">iPhone 12 64GB Blue </h5>
+    <p class="card-text">iphone 12,boasts an advanced dual_camera system that allows ...</p>
+<h3 class="text-danger "> Rs 12599.O </h3>
+   <br>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-success">Add to Cart </a>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-primary">By Now  </a>
+
+  </div>
+
+</div>
+<div class="card productcard m-3 text-center" style="width: 22rem;">
+  <img src="{% static 'images/img8.jpg'%}" class="card-img-top p-2" alt="..." style="height: 360px; ">
+  <div class="card-body">
+    <h5 class="card-title">Lenovo ideapad 3 14 PC Laptop </h5>
+    <p class="card-text">Lenovo ideapad intel Core i5, 8GB.lightweight laptop.boasts an ..</p>
+<h3 class="text-danger "> Rs 12599.O </h3>
+   <br>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-success">Add to Cart </a>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-primary">By Now  </a>
+
+  </div>
+
+
+</div>
+<div class="card productcard m-3 text-center" style="width: 22rem;">
+  <img src="{% static 'images/img2.jpg'%}" class="card-img-top p-2" alt="..." style="height: 360px; ">
+  <div class="card-body">
+    <h5 class="card-title">ASUS X515</h5>
+    <p class="card-text">ASUS Vivobook 15 X 515 lightweight laptop.boasts an advanced dual_system....</p>
+<h3 class="text-danger "> Rs 12599.O </h3>
+   <br>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-success">Add to Cart </a>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-primary">By Now  </a>
+
+  </div>
+
+
+</div>
+<div class="card productcard m-3 text-center" style="width: 22rem;">
+  <img src="{% static 'images/img1.jpg'%}" class="card-img-top p-2" alt="..." style="height: 360px; ">
+  <div class="card-body">
+    <h5 class="card-title">APPLE IPHONE 13 PRO</h5>
+    <p class="card-text">iphone 13,boasts an advanced dual_camera system that allows ...</p>
+<h3 class="text-danger "> Rs 12599.O </h3>
+   <br>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-success">Add to Cart </a>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-primary">By Now  </a>
+
+  </div>
+</div>
+<div class="card productcard m-3 text-center" style="width: 22rem;">
+  <img src="{% static 'images/img4.jpg'%}" class="card-img-top p-2" alt="..." style="height: 360px; ">
+  <div class="card-body">
+    <h5 class="card-title">APPLE MacBook Air M1 2020 </h5>
+    <p class="card-text">apple macook air m1 2020 13 /16GO /256GB SSD...</p>
+<h3 class="text-danger "> Rs 12599.O </h3>
+   <br>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-success">Add to Cart </a>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-primary">By Now  </a>
+
+  </div>
+</div>
+<div class="card productcard m-3 text-center" style="width: 22rem;">
+  <img src="{% static 'images/img6.jpg'%}" class="card-img-top p-2" alt="..." style="height: 360px; ">
+  <div class="card-body">
+    <h5 class="card-title">PrO Apple iPhone XS </h5>
+    <p class="card-text">iphone xs,boasts an advanced dual_camera system that allows ...</p>
+<h3 class="text-danger "> Rs 12599.O </h3>
+   <br>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-success">Add to Cart </a>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-primary">By Now  </a>
+
+  </div>
+
+</div>
+<div class="card productcard m-3 text-center" style="width: 22rem;">
+  <img src="{% static 'images/img8.jpg'%}" class="card-img-top p-2" alt="..." style="height: 360px; ">
+  <div class="card-body">
+    <h5 class="card-title">Lenovo ideapad 3 14 PC Laptop </h5>
+    <p class="card-text">Lenovo ideapad intel Core i5, 8GB.lightweight laptop.boasts an ..</p>
+<h3 class="text-danger "> Rs 12599.O </h3>
+   <br>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-success">Add to Cart </a>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-primary">By Now  </a>
+
+  </div>
+
+
+</div>
+<div class="card productcard m-3 text-center" style="width: 22rem;">
+  <img src="{% static 'images/img2.jpg'%}" class="card-img-top p-2" alt="..." style="height: 360px; ">
+  <div class="card-body">
+    <h5 class="card-title">ASUS X515</h5>
+    <p class="card-text">ASUS Vivobook 15 X 515 lightweight laptop.boasts an advanced dual_system....</p>
+<h3 class="text-danger "> Rs 12599.O </h3>
+   <br>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-success">Add to Cart </a>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-primary">By Now  </a>
+
+  </div>
+
+
+</div>
+<div class="card productcard m-3 text-center" style="width: 22rem;">
+  <img src="{% static 'images/img1.jpg'%}" class="card-img-top p-2" alt="..." style="height: 360px; ">
+  <div class="card-body">
+    <h5 class="card-title">APPLE IPHONE 13 PRO</h5>
+    <p class="card-text">iphone 13,boasts an advanced dual_camera system that allows ...</p>
+<h3 class="text-danger "> Rs 12599.O </h3>
+   <br>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-success">Add to Cart </a>
+<a href="{% url 'store_page1' %}" class="btn btn-outline-primary">By Now  </a>
+
+  </div>
+</div>
+</div>
+</div>
+
+<footer>
+<div class="card text-center" data-bs-theme="dark">
+  <div class="card-header ">
+  
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">All rights reserved</h5>
+    <p class="card-text">We appreciate your visite to our electronic store.</p>
+    <a href="#" class="btn btn-secondary"> Payment</a>
+  </div>
+  <div class="card-footer text-body-secondary">
+
+  </div>
+</div>
+</footer>
+
+
+</body>
+</html>
